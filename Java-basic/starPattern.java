@@ -289,21 +289,23 @@
 //     }
 // }
 
-
 public class starPattern {
-    public static void main(String agr[]) {
-        for(int i=10;i>=0;i--){
-            int num = 1;
-            for(int j=0 ; j<=i;j++){
+    public static void main(String[] args) {
+        int rows = 10;
+
+        for (int i = 0; i < rows; i++) {
+
+            // Spaces
+            for (int j = 0; j < rows - i - 1; j++) {
                 System.out.print(" ");
             }
-            for(int k = i; k<=10;k++){
-                System.out.print(num);
+
+            // Ones
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("1");
             }
-            for(int x = i+1; x<=10;x++){
-                System.out.print(num);
-            }
-            System.out.print("\n");
+
+            System.out.println();
         }
     }
 }
