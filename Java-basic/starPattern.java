@@ -11,15 +11,18 @@
 // **********
 
 // public class starPattern {
-// public static void main(String agr[]){
-// for(int i=1;i<=10;i++){
-// for(int j=1;j<=i;j++){
-// System.out.print("*");
+
+//     public static void main(String agr[]) {
+//         for (int i = 1; i <= 10; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.print("\n");
+//         }
+//     }
 // }
-// System.out.print("\n");
-// }
-// }
-// }
+
+
 
 // OUTPUT
 // ***********
@@ -34,15 +37,18 @@
 // **
 // *
 // public class starPattern {
-// public static void main(String agr[]){
-// for(int i=1;i<=10;i++){
-// for(int j=1;j<= 10 - i +1 ;j++){
-// System.out.print("*");
+
+//     public static void main(String agr[]) {
+//         for (int i = 1; i <= 10; i++) {
+//             for (int j = 1; j <= 10 - i + 1; j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.print("\n");
+//         }
+//     }
 // }
-// System.out.print("\n");
-// }
-// }
-// }
+
+
 
 // OUTPUT
 // *
@@ -56,21 +62,22 @@
 // *********
 // **********
 // ***********
-
 // public class starPattern {
-// public static void main(String agr[]) {
+//     public static void main(String agr[]) {
+//         for (int i = 1; i <= 10; i++) {
+//             for (int j = 1; j <= 10 - i; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int k = 1; k <= i; k++) {
+//                 System.out.print("*");
+//             }
+//             System.out.print("\n");
+//         }
+//     }
+// }
 
-// for (int i = 1; i <= 10; i++) {
-// for (int j = 1; j <= 10 - i; j++) {
-// System.out.print(" ");
-// }
-// for(int k =1; k<=i;k++){
-// System.out.print("*");
-// }
-// System.out.print("\n");
-// }
-// }
-// }
+
+
 
 // OUTPUT
 // + + + + + + + + + + +
@@ -84,48 +91,48 @@
 // + + + + + + + + + + +
 // + + + + + + + + + + +
 // + + + + + + + + + + +
-
 // public class starPattern {
-// public static void main(String agr[]){
+//     public static void main(String agr[]) {
+//         for (int i = 0; i <= 10; i++) {
+//             for (int j = 0; j <= 10; j++) {
+//                 System.out.print("+ ");
+//             }
+//             System.out.print("\n");
+//         }
+//     }
+// }
 
-// for(int i=0;i<=10;i++){
-// for(int j=0 ; j<=10;j++){
-// System.out.print("+ ");
-// }
-// System.out.print("\n");
-// }
-// }
-// }
+
+
 
 // OUTPUT
+// * * * * * * * * * * * 
+// *                   * 
+// *                   * 
+// *                   * 
+// *                   * 
+// *                   * 
+// *                   * 
+// *                   * 
+// *                   * 
+// *                   * 
 // * * * * * * * * * * *
-// * *
-// * *
-// * *
-// * *
-// * *
-// * *
-// * *
-// * *
-// * *
-// * * * * * * * * * * *
-
 // public class starPattern {
-// public static void main(String agr[]) {
+//     public static void main(String agr[]) {
+//         for (int i = 0; i <= 10; i++) {
+//             for (int j = 0; j <= 10; j++) {
+//                 if (j == 0 || j == 10 || i == 0 || i == 10) {
+//                     System.out.print("* ");
+//                 } else {
+//                     System.out.print("  ");
+//                 }
+//             }
+//             System.out.println("");
+//         }
+//     }
+// }
 
-// for (int i = 0; i <= 10; i++) {
-// for (int j = 0; j <= 10; j++) {
-// if(j==0 || j==10 || i==0 || i==10){
-// System.out.print("* ");
-// } else{
-// System.out.print(" ");
-// }
-// }
 
-// System.out.println("");
-// }
-// }
-// }
 
 // OUTPUT
 // 1
@@ -138,31 +145,32 @@
 // 01010101
 // 101010101
 // 0101010101
+// public class starPattern {
+//     public static void main(String agr[]) {
+//         for (int i = 1; i <= 5; i++) {
+//             if (i % 2 == 0) {
+//                 for (int j = 1; j <= i; j++) {
+//                     if (j % 2 == 0) {
+//                         System.out.print("1");
+//                     } else {
+//                         System.out.print("0");
+//                     }
+//                 }
+//             } else {
+//                 for (int j = 1; j <= i; j++) {
+//                     if (j % 2 == 0) {
+//                         System.out.print("0");
+//                     } else {
+//                         System.out.print("1");
+//                     }
+//                 }
+//             }
+//             System.out.print("\n");
+//         }
+//     }
+// }
 
-public class starPattern {
-    public static void main(String agr[]) {
-        for (int i = 1; i <= 5; i++) {
-            if (i % 2 == 0) {
-                for (int j = 1; j <= i; j++) {
-                    if (j % 2 == 0) {
-                        System.out.print("1");
-                    } else {
-                        System.out.print("0");
-                    }
-                }
-            } else {
-                for (int j = 1; j <= i; j++) {
-                    if (j % 2 == 0) {
-                        System.out.print("0");
-                    } else {
-                        System.out.print("1");
-                    }
-                }
-            }
-            System.out.print("\n");
-        }
-    }
-}
+
 
 // OUTPUT
 // 1
@@ -176,19 +184,20 @@ public class starPattern {
 // 37 38 39 40 41 42 43 44 45
 // 46 47 48 49 50 51 52 53 54 55
 // 56 57 58 59 60 61 62 63 64 65 66
-
 // public class starPattern {
-// public static void main(String agr[]) {
-// int num = 1;
-// for (int i = 0; i <= 10; i++) {
-// for(int j =0; j<=i; j++){
-// System.out.print(num+ " ");
-// num++;
+//     public static void main(String agr[]) {
+//         int num = 1;
+//         for (int i = 0; i <= 10; i++) {
+//             for (int j = 0; j <= i; j++) {
+//                 System.out.print(num + " ");
+//                 num++;
+//             }
+//             System.out.print("\n");
+//         }
+//     }
 // }
-// System.out.print("\n");
-// }
-// }
-// }
+
+
 
 // OUTPUT
 // + + + + + + + + + + +
@@ -202,52 +211,55 @@ public class starPattern {
 // + + + + + + + + + + +
 // + + + + + + + + + + +
 // + + + + + + + + + + +
-
 // public class starPattern {
-// public static void main(String agr[]) {
-// for(int i=10; i>=0;i--){
-// for(int j=0;j<=i;j++){
-// System.out.print(" ");
+//     public static void main(String agr[]) {
+//         for (int i = 10; i >= 0; i--) {
+//             for (int j = 0; j <= i; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int k = 0; k <= 10; k++) {
+//                 System.out.print("+ ");
+//             }
+//             System.out.print("\n");
+//         }
+//     }
 // }
-// for(int k=0;k<=10;k++){
-// System.out.print("+ ");
-// }
-// System.out.print("\n");
-// }
-// }
-// }
+
+
+
+
 
 // OUTPUT
-
-// + + + + + + + + + + +
-// + +
-// + +
-// + +
-// + +
-// + +
-// + +
-// + +
-// + +
-// + +
-// + + + + + + + + + + +
-
+//            + + + + + + + + + + + 
+//           +                   + 
+//          +                   + 
+//         +                   + 
+//        +                   + 
+//       +                   + 
+//      +                   + 
+//     +                   + 
+//    +                   + 
+//   +                   + 
+//  + + + + + + + + + + +
 // public class starPattern {
-// public static void main(String agr[]) {
-// for(int i=10; i>=0;i--){
-// for(int j=0;j<=i;j++){
-// System.out.print(" ");
+//     public static void main(String agr[]) {
+//         for (int i = 10; i >= 0; i--) {
+//             for (int j = 0; j <= i; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int k = 0; k <= 10; k++) {
+//                 if (k == 0 || k == 10 || i == 0 || i == 10) {
+//                     System.out.print("+ ");
+//                 } else {
+//                     System.out.print("  ");
+//                 }
+//             }
+//             System.out.print("\n");
+//         }
+//     }
 // }
-// for(int k=0;k<=10;k++){
-// if(k==0 || k==10 || i==0 || i==10){
-// System.out.print(" + ");
-// } else{
-// System.out.print(" ");
-// }
-// }
-// System.out.print("\n");
-// }
-// }
-// }
+
+
 
 // OUTPUT
 // *
@@ -261,41 +273,95 @@ public class starPattern {
 // *****************
 // *******************
 // *********************
-
 // public class starPattern {
-// public static void main(String agr[]) {
-// for(int i=10;i>=0;i--){
-// for(int j=0 ; j<=i;j++){
-// System.out.print(" ");
-// }
-// for(int k = i; k<=10;k++){
-// System.out.print("*");
-// }
-// for(int x = i+1; x<=10;x++){
-// System.out.print("*");
-// }
-// System.out.print("\n");
-// }
-// }
+//     public static void main(String agr[]) {
+//         for (int i = 10; i >= 0; i--) {
+//             for (int j = 0; j <= i; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int k = i; k <= 10; k++) {
+//                 System.out.print("*");
+//             }
+//             for (int x = i + 1; x <= 10; x++) {
+//                 System.out.print("*");
+//             }
+//             System.out.print("\n");
+//         }
+//     }
 // }
 
+
+
+// *      *
+// **    **
+// ***  ***
+// ********
+// ********
+// ***  ***
+// **    **
+// *      *
 // public class starPattern {
-// public static void main(String[] args) {
-// int rows = 10;
-
-// for (int i = 0; i < rows; i++) {
-
-// // Spaces
-// for (int j = 0; j < rows - i - 1; j++) {
-// System.out.print(" ");
+//     public static void main(String[] args) {
+//         int rows = 4;
+//         //first half
+//         for (int i = 1; i <= rows; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+//             for (int j = 1; j <= 2 * (rows - i); j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//         //second half
+//         for (int i = 4; i >= 1; i--) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+//             for (int j = 1; j <= 2 * (rows - i); j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+//     *
+//    ***
+//   *****
+//  *******
+//  *******
+//   *****
+//    ***
+//     *
+// public class starPattern {
+//     public static void main(String[] args) {
+//         int rows = 4;
+//         //first half
+//         for (int i = 1; i <= rows; i++) {
+//             for (int j = 1; j <= (rows-i)+1; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int j = 1; j <= (2*i-1); j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//         //second half
+//         for (int i = rows; i >=1; i--) {
+//             for (int j = 1; j <= (rows-i)+1; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int j = 1; j <= (2*i-1); j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
 // }
 
-// // Ones
-// for (int j = 0; j < 2 * i + 1; j++) {
-// System.out.print("1");
-// }
-
-// System.out.println();
-// }
-// }
-// }
