@@ -1,4 +1,4 @@
-class Solution {
+class buyOrSellStock121 {
     public int maxProfit(int[] prices) {
        int maxProfit = 0;
        int buyPrice = Integer.MAX_VALUE;
