@@ -1,0 +1,23 @@
+import java.util.HashSet;
+
+public class SmallestMissingIntegerGreaterThanSequentialPrefixSum2996 {
+    public int missingInteger(int[] nums) {
+        int prefixSum = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1] + 1) {
+                prefixSum += nums[i];
+            } else {
+                break;
+            }
+        }
+        HashSet<Integer> set = new HashSet<>();
+        for (int num : nums) {
+            set.add(num);
+        }
+        while (set.contains(prefixSum)) {
+            prefixSum++;
+        }
+        return prefixSum;
+    }
+
+}
