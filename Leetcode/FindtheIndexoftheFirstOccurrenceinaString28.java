@@ -1,4 +1,4 @@
-public class FindtheIndexoftheFirstOccurrenceinaString28{
+public class FindtheIndexoftheFirstOccurrenceinaString28 {
     public int strStr(String haystack, String needle) {
         if (needle.length() == 0)
             return 0;
@@ -13,5 +13,4 @@ public class FindtheIndexoftheFirstOccurrenceinaString28{
         }
         return -1;
     }
-
 }
