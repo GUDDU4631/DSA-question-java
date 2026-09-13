@@ -11,9 +11,8 @@ class Solution {
                     break;
                 }
                 set.add(ch);
-
+                maxLength = Math.max(maxLength, j - i + 1);
             }
-            maxLength = Math.max(maxLength, set.size());
         }
         return maxLength;
     }
