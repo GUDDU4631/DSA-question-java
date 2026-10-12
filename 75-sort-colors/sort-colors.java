@@ -1,12 +1,12 @@
 class Solution {
     public void sortColors(int[] nums) {
-       int largestNum = Integer.MIN_VALUE;
+       int largestNum = 2;
        //get largestNum...
-       for(int i=0;i<nums.length;i++){
-        if(largestNum<nums[i]){
-            largestNum=nums[i];
-        }
-       }
+    //    for(int i=0;i<nums.length;i++){
+    //     if(largestNum<nums[i]){
+    //         largestNum=nums[i];
+    //     }
+    //    }
         //counting the valuse how many time appear 
         int[] counting = new int[largestNum+1];
         for(int i=0;i<nums.length;i++){
