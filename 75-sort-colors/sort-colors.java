@@ -1,23 +1,22 @@
 class Solution {
     public void sortColors(int[] nums) {
-       int largestNum = 2;
-       //get largestNum...
-    //    for(int i=0;i<nums.length;i++){
-    //     if(largestNum<nums[i]){
-    //         largestNum=nums[i];
-    //     }
-    //    }
-        //counting the valuse how many time appear 
-        int[] counting = new int[largestNum+1];
-        for(int i=0;i<nums.length;i++){
-            counting[nums[i]]++;
-        }
-        int j =0;
-        for(int i=0;i<counting.length;i++){
-            while(counting[i]>0){
-                nums[j]= i;
-                j++;
-                counting[i]--;
+        int low = 0;
+        int high = nums.length - 1;
+        int mid = 0;
+        while (mid <= high) {
+            if (nums[mid] == 0) {
+                int temp = nums[low];
+                nums[low] = nums[mid];
+                nums[mid] = temp;
+                low++;
+                mid++;
+            } else if (nums[mid] == 1) {
+                mid++;
+            } else if (nums[mid] == 2) {
+                int temp = nums[high];
+                nums[high] = nums[mid];
+                nums[mid] = temp;
+                high--;
             }
         }
     }
